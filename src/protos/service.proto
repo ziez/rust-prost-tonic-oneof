@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "types.proto";
+package Service;
+
+
+service Worker {
+    rpc Do (Request) returns (Reply);
+}
+
+message Request {
+    Types.Message1 message1 = 1;
+    Types.Message2 message2 = 2;
+}
+
+message Reply {
+	bool success = 1;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package Types;
+
+message Message1 {
+    uint32 value1 = 1;
+    bytes value2 = 2;
+}
+
+message Message2 {
+    uint32 value1 = 1;
+    uint32 value2 = 2;
+    uint32 value3 = 3;
+    uint32 value4 = 4;
+}
